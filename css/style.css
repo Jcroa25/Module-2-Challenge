@@ -150,7 +150,7 @@ hr {
 }
 
 .project-image {
-    margin top: 30px;
+
     max-width: 350px;
     border-radius: 250px;
 }
@@ -182,7 +182,7 @@ h2 {
   }
   
   #content-wrap {
-    padding-bottom: 2.5rem;    /* Footer height */
+    padding-bottom: 2.5rem;
   }
   
   .footer {
