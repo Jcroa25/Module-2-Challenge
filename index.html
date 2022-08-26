@@ -2,72 +2,75 @@
 <html lang="en">
     <head>
         <meta charset="utf8">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <title>My Portfolio</title>
     </head>
     <body>
-        <header>
-            <h1><big>My</big> Portfo<small>lio</small></h1>
-            <img src="/css/images/avatar image.jpeg" alt="avatar" class="avatar">
-                <nav class="toplink">
-                    <ul>
-                        <li>
-                            <a href="about me">About Me</a>
-                        </li>
-                        <li>
-                            <a href="works">Works</a>
-                        </li>
-                        <li>
-                            <a href="contact">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-        </header>
+        <section>
+            <header>
+                <h1><big>My</big> Portfo<small>lio</small></h1>
+                <img src="/css/images/avatar image.jpeg" alt="avatar" class="avatar">
+                    <nav class="toplink">
+                        <ul>
+                            <li><a href="#about-me">About Me</a></li>
+                            <li> <a href="#projects">Projects</a></li>
+                            <li><a href="#contact-me">Contacts</a></li>
+                         </ul>
+                    </nav>
+            </header>
+        </section>   
         <div id="hero"></div>
-        <main>
-            <section>
-            <header><h2>About Me</h2></header> 
-            <p id="description">sdhgjhasgkjbnasfkjghbnaskfjhnbgkjasdhgjhasgkjbnasfkjghbnaskfjhnbgkjasdhgjhasgkjbnasfkjghbnaskfjhnbgkjasdhgjhasgkjbnasfkjghbnaskfjhnbgkja</p>
-            
-        </main>
-            
-       
-            <aside>
-            <div class="projects">
-                <header id="works"><h2>Works</h2></header> <br>
-                <section class= "card">
-                    <header id="project">Project 1</header>
-                    <img src="/css/images/charging phone.jpg" alt="charging phone">
-                    <p>Phone project</p>
-                </section>
-                <section class="card">
-                    <header>Project 2</header>
-                    <img src="/css/images/windows 10 Screen.jpg" alt="windows 10 screen">
-                    <p>Windows project</p>
-                    </section>
-                <section class="card".>
-                    <header>Project 3</header>
-                    <img src="/css/images/sunset.jpg" alt="sunset">
-                    <p>Sunset project</p>
-                </section>
-                <section class="card">
-                    <header>Project 4</header>
-                    <img src="/css/images/water splash.jpg" alt="water splash">
-                    <p>Water project</p>
-                </section>
+        
+        <br>
+        <section class="sub-section" id="about-me">
+            <div class="information">
+                <h2 class="intro">About Me:</h2>
+                <p class="p2">Hello. My name is Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                    sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
             </div>
-            </aside>
-        <div class="footer">
-            <h3>Contact Me</h3>
-            <h4>
-                <nav>
-                    <ul>
-                        <li><a href="number">555.555.555</a></li>
-                        <li><a href="email">myportfolio@email.com</a></li>
-                        <li><a href="github">Github</a></li>
-                    </ul>  
-                </nav>  
-            </h4>
+        </section>
+        <section class="sub-section-alternative" id="projects">   
+            <h2>Projects</h2>
+            <div class="project-container">
+                <div class="project-card" id="main-card">
+                    <img class="project-image" src="/css/images/keyboard.webp" alt="Project One Image">
+                    <h3>Project One</h3>
+                    <p class="subtext">This is my first project and I am going to talk about what it is</p>
+                    <hr>
+                    <p class="subtext"><a class="project-link" href="https://www.github.com">View here</a></p>
+                </div>
+                <div class="project-cards">
+                    <img class="project-images" src="/css/images/charging phone.jpg" alt="Project Two Image">
+                    <h3>Project Two</h3>
+                    <p class="subtext">This is my second project and I am going to talk about what it is</p>
+                    <hr>
+                    <p class="subtext"><a class="project-link" href="https://www.github.com">View here</a></p>
+                </div>
+                <div class="project-cards">
+                    <img class=" project-images" src="/css/images/water splash.jpg" alt="Project Three Image">
+                    <h3>Project Three</h3>
+                    <p class="subtext">This is my third project and I am going to talk about what it is</p>
+                    <hr>
+                    <p class="subtext"><a class="project-link" href="https://www.github.com">View here</a></p>
+                </div>
+                <div class="project-cards">
+                    <img class=" project-images" src="css/images/windows 10 Screen.jpg" alt="Project Four Image">
+                    <h3>Project Four</h3>
+                    <p class="subtext">This is my fourth project and I am going to talk about what it is</p>
+                    <hr>
+                    <p class="subtext"><a class="project-link" href="https://www.github.com">View here</a></p>
+                </div>
+        </section> 
+        <div id="page-container">
+            <div id="content-wrap">
+            </div>
+            <footer class="footer" id="contact-me">
+                <h3>Contact Me</h3>   
+                <p class="p1">email@hotmail.com</p>   
+                <p class="p1">555.555.5555</p>  
+            </footer>
         </div>
     </body>
 </html>

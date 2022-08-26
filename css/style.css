@@ -4,30 +4,51 @@ html {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
-    background-color: rgb(108, 105, 105);
+    background-color: lightgrey;
 }
+
+section {
+    height: 300px;
+    width: 100;
+  
+}
+
 
 p {
-    color: white;
-    
+    color: black;
+    margin-left: 15px;
+    overflow: wrap;
+    font-size: 30px;
+    font-weight: 300px;
+    line-height: normal;
+    padding-right: 10px;
 }
 
+
+.subtext {
+    font-size: 20px;
+    font-weight: 300px;
+}
 header {
-    padding: 10px;
+    padding: 0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: darkred;
+    background-color:  darkred;
     color: white;      
+    height: 500px;
+    width: 100;
 }
 
 header h1{
+    padding: 50px;
     display: inline-block;
-    font-size: 36px;
+    font-size: 90px;
 }
 
 .avatar {
     float: left;
-    width: 50px;
-    height: 50px;
+    padding: 15px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
 }
 
@@ -48,13 +69,15 @@ header nav {
         margin-left: 25px;
     }
 
-
+.toplink {
+    font-size: 30px;
+}
 
 #hero {
-    height: 200px;
+    height: 400px;
     width: 100%;
     background-size: cover;
-    background-image: url(../css/images/FFXV\ Module\ 2.jpg);
+    background-image: url(../css/images/sunset.jpg);
     background-position: center;
 }
 
@@ -68,69 +91,111 @@ body {
     max-width: 100%;
 }
 
-#description {
-    padding-left: 20px;
-    text-align: center;
-    display: inline-block;
-    
-  
-    
-}
-#keyboard {
-    height: 10%;
-   
-    
-    
+
+
+.sub-section {
+    justify-content: space-around;
+    padding: 80px;
+
 }
 
-img {
-    height: 100%;
-    width: 100%;
-    display: block;
-}
-
-aside {
-    width: 30%;
-    padding-top: 30px;
+.information {
+    box-shadow: 5px 5px 20px black;
+    height: 400px;
     padding-left: 30px;
+    padding-top: 20px;
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }  
+}
+
+.sub-section-alternative {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
     text-align: center;
+    padding: 80px;
+}
+
+#projects {
+    padding: 100px;
+}
+.project-container {
+   display: flex;
+   padding: 20px;
+    margin: 5px;
+    justify-content: space-around;
+  
+}
+
+.project-images {
+    margin top: 30px;
+    max-width: 250px;
+    border-radius: 150px;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: orangered;
+}
+
+.project-image {
+    margin top: 30px;
+    max-width: 350px;
+    border-radius: 250px;
+}
+.project-cards {
+    width: 300px;
+    height: 400px;
+    box-shadow: 5px 5px 20px black;
+    padding: 30px;
     
 }
 
-
-
-
-.card {
-    border-style: solid;
+#main-card {
+    width: 600px;
+    height: 400px;
+    box-shadow: 5px 5px 20px black;
+    padding: 30px;
+    
 }
-
-#works {
-    background-color: black;
-}
-
 h2 {
+    font-size: 50px;
+    color: black;
+}
+
+
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 500px;    
+  }
+
+.p1 {
     color: white;
 }
 
-
-
-.footer {
-    text-align: center;
-    padding: 30%;
-}
-
-.footer nav ul {
-    margin-right: 20px;
-    float: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    list-style-type: none;
-    font-size: 15px;
-}
-
-.footer nav ul li {
-    display: inline-block;
-
-}
 a {
     color: white;
     text-decoration: none;
@@ -144,5 +209,11 @@ a:hover {
 }
 h3 {
     color: white;
-    margin-left: 30px;
+    font-size: 40px;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 80px;
 }
